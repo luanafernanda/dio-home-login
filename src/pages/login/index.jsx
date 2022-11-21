@@ -1,37 +1,52 @@
-import { Link } from "react-router-dom";
-import bannerImage from "../../assets/banner.png";
+import { MdEmail, MdLock } from "react-icons/md";
 import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
+import { Input } from "../../components/Input";
 
-import { Container, TextContent, Title, TitleHighlight } from "./style";
+import {
+  Column,
+  Container,
+  CriarText,
+  EsqueciText,
+  Row,
+  SubtitleLogin,
+  Title,
+  TitleLogin,
+  Wrapper,
+} from "./style";
 
 const Login = () => {
   return (
     <>
       <Header />
       <Container>
-        <div>
+        <Column>
           <Title>
-            <TitleHighlight>
-              Implemente
-              <br />
-            </TitleHighlight>
-            o seu futuro global agora!
+            A Plataforma para vocẽ aprendercom experts, dominar as princípais
+            tecnologias e entrar mais rápido nas empresas mais desejadas.
           </Title>
-          <TextContent>
-            Domine as tecnologias utilizadas pelas empresas mais inovadoras do
-            mundo e encare seu novo desafio profissional, evoluindo em
-            comunidade com os melhores experts.
-          </TextContent>
-          <Button
-            title="Começar agora"
-            variant="secondary"
-            onClick={() => null}
-          />
-        </div>
-        <div>
-          <img src={bannerImage} alt="Imagem principal" />
-        </div>
+        </Column>
+        <Column>
+          <Wrapper>
+            <TitleLogin>Faça seu cadastro</TitleLogin>
+            <SubtitleLogin>Faça seu login and make the change</SubtitleLogin>
+            <form>
+              <Input placeholder="E-mail" leftIcon={<MdEmail />} />
+              <Input
+                placeholder="Senha"
+                type="password"
+                leftIcon={<MdLock />}
+              />
+              <Button title="Entrar" variant="sencondary" />
+            </form>
+
+            <Row>
+              <EsqueciText>Esqueci minha senha</EsqueciText>
+              <CriarText>Criar Conta</CriarText>
+            </Row>
+          </Wrapper>
+          <Input placeholder="email" />
+        </Column>
       </Container>
     </>
   );

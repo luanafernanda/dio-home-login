@@ -4,12 +4,28 @@ export const Container = styled.main`
   width: 100%;
   max-width: 80%;
   margin: 0 auto;
-  margin-top: 120%;
+  margin-top: 120px;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-itens: center;
+  align-items: center;
+`;
+
+export const Wrapper = styled.div`
+  max-width: 300px;
+`;
+
+export const Column = styled.div`
+  flex: 1;
+`;
+
+export const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 `;
 
 export const Title = styled.h2`
@@ -22,17 +38,41 @@ export const Title = styled.h2`
   line-heigth: 44px;
   color: #ffffff;
 `;
-export const TitleHighlight = styled.span`
-  color: #e4105d;
+
+export const TitleLogin = styled.p`
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weigth: 700;
+  font-size: 32px;
+  margin-bottom: 20px;
+  line-heigth: 44px;
 `;
 
-export const TextContent = styled.p`
+export const SubtitleLogin = styled.p`
   font-family: "Open Sans";
   font-style: normal;
   font-weigth: 400;
-  font-size: 16px;
-  width: 420px;
-  margin-bottom: 20px;
-  line-heigth: 22px;
-  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 35px;
+  line-heigth: 25px;
+`;
+
+export const EsqueciText = styled.p`
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weigth: 700;
+  font-size: 14px;
+  line-heigth: 19px;
+
+  color: #e5e044;
+`;
+
+export const CriarText = styled.p`
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weigth: 700;
+  font-size: 14px;
+  line-heigth: 19px;
+
+  color: #e23dd7;
 `;
