@@ -1,17 +1,17 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { Home } from "./pages/home/";
-import { Login } from "./pages/login/";
+import { Home } from "./pages/home";
+import { Login } from "./pages/login";
+import { Feed } from "./pages/feed";
 
 function App() {
   return (
     <Router>
-      <Route path="/">
-        <Home></Home>
-      </Route>
-      <Route path="/Login">
-        <Login></Login>
-      </Route>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/feed" element={<Feed />} />
+      </Routes>
     </Router>
   );
 }
