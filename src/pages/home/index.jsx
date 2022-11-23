@@ -35,7 +35,7 @@ const Home = () => {
           />
         </div>
         <div>
-          <img src={bannerImage} alt="Imagem principal" />
+          <img src={bannerImage} alt="Imagem principal do site." />
         </div>
       </Container>
     </>

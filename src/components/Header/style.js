@@ -17,12 +17,6 @@ export const Row = styled.div`
   align-items: center;
 `;
 
-export const Column = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-`;
-
 export const Wrapper = styled.div`
   background: #151515;
   width: 100%;
@@ -41,18 +35,16 @@ export const BuscarInputContainer = styled.div`
   margin: 0 12px;
 
   display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
-export const Menu = styled.div`
+export const Menu = styled.a`
   front-family: "Open Sans";
   font-style: normal;
-  font-size: 8px;
+  font-weigtht: 700;
+  font-size: 18px;
   line-heigth: 25px;
-  color: #fff;
+  color: #ffffff;
   margin-right: 12px;
-  text-decoration: none;
 `;
 
 export const MenuRight = styled.div`
@@ -60,7 +52,7 @@ export const MenuRight = styled.div`
   font-style: normal;
   font-size: 12px;
   line-heigth: 25px;
-  color: #fff;
+  color: #ffffff;
   margin-right: 12px;
   text-decoration: none;
 `;
@@ -69,7 +61,7 @@ export const UserPicture = styled.img`
   width: 32px;
   heigth: 32px;
   border-radius: 22px;
-  border: 2px solid #ffffff;
+  border: 3px solid #ffffff;
 `;
 
 export const Input = styled.input`

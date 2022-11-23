@@ -4,6 +4,8 @@ import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
 
+//import { useForm } from "react-hook-form";
+
 import {
   Column,
   Container,
@@ -34,7 +36,7 @@ const Login = () => {
         <Column>
           <Wrapper>
             <TitleLogin>Faça seu cadastro</TitleLogin>
-            <SubtitleLogin>Faça seu login and make the change</SubtitleLogin>
+            <SubtitleLogin>Faça seu login and make the change._</SubtitleLogin>
             <form>
               <Input placeholder="E-mail" leftIcon={<MdEmail />} />
               <Input
@@ -44,9 +46,9 @@ const Login = () => {
               />
               <Button
                 title="Entrar"
-                variant="sencondary"
+                variant="secondary"
                 onClick={handleClickSignIn}
-                type="button"
+                type="submits"
               />
             </form>
 
@@ -55,7 +57,6 @@ const Login = () => {
               <CriarText>Criar Conta</CriarText>
             </Row>
           </Wrapper>
-          <Input placeholder="email" />
         </Column>
       </Container>
     </>
